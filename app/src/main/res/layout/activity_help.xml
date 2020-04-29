@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:text="Hướng dẫn"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/description"
+            android:text="- Thêm một sinh viên bằng cách nhấn vào fab button add và nhập đầy đủ thông tin.\n- Xóa một sinh viên bằng cách nhấn giữ vào sinh viên đó sau đó chọn xác nhận xóa.\n- Để chọn Avatar cho một sinh viên nhập link ảnh vào khung EditText Avatar, điều này đòi hỏi thiết bị cần kết nối internet, lưu ý là ứng dụng không load http.\n- Khi nhấn vào một sinh viên sẽ hiển thị thông tin chi tiết của sinh viên đó."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/button_custom"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
